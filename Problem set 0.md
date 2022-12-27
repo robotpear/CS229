@@ -14,7 +14,7 @@ A: $\nabla f(x) = \frac{\partial g}{\partial a^Tx}a^T$ and $\nabla^2 f(x) = g^{'
 
 ## 2. Positive definite matrices
 *Definition of PSD(postive semi-definite)* : $A\ge 0, A=A^T$ and $x^TAx\ge 0$ for all $x \in \mathbb R^n$  
-*Definition of PD(postive definite)*:  $A> 0, A=A^T$ and $x^TAx> 0$ for all $x \ne 0$ in other words,$x$ is a non-zero vector.The simplest example of a positive definite matrix is
+*Definition of PD(postive definite)*:  $A> 0, A=A^T$ and $x^TAx> 0$ for all $x \ne 0$ in other words, $x$ is a non-zero vector.The simplest example of a positive definite matrix is
 the identity $I$  
 *(a)* $z \in \mathbb R^n$. Show that $A = zz^T$ is PSD.  
 A: $z^TAz=z^Tzz^Tz=A^TA$. It is easy to know that $A^TA \ge 0$. So $A=zz^T$ is PSD.
@@ -22,3 +22,5 @@ A: $z^TAz=z^Tzz^Tz=A^TA$. It is easy to know that $A^TA \ge 0$. So $A=zz^T$ is P
 *(b)* $z \in \mathbb R^n$ be a non-zero vector and $A = zz^T$. What is null-space of $A$ and its rank?  
 A: $N(A) = \lbrace x\in \mathbb R^n, x^Tz = 0 \rbrace , R(A)=R(zz^T)=1$ 
 
+*(c)* $A$ is PSD and $B \in \mathbb R^n $ be arbitrary. Is $BAB^T$ PSD?  
+A: $xBAB^Tx^T = (xB)A(B^Tx^T)$ since $A$ is PSD so we can get $(xB)A(B^Tx^T) \ge 0$ , $BAB^T$ is PSD.
